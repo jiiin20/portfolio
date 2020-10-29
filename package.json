@@ -23,6 +23,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "scroll-to": "0.0.2",
     "vue": "^2.6.12"
   }
 }

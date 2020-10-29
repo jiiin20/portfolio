@@ -1,17 +1,30 @@
 <template>
     <div id="wrap">
-        <Header></Header>
-        <img src="assets/img/test-image.jpg" width="100%">
+        <Header />
+        <!-- <img id="imageA" src="assets/img/test-image.jpg" width="100%"> -->
+        <About />
+        <!-- <img id="imageB" src="assets/img/test-image.jpg" width="100%"> -->
+        <Skill />
+        <Work />
+        <Contact />
     </div>
 </template>
 
 <script>
 
 import Header from './components/Header'
+import About from './components/About'
+import Skill from './components/Skill'
+import Work from './components/Work'
+import Contact from './components/Contact'
 
 export default {
     components:{
-        Header
+        Header,
+        About,
+        Skill,
+        Work,
+        Contact
     }
 }
 
