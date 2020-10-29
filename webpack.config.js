@@ -11,13 +11,15 @@ module.exports = (env,opts)=>{
         },
         output:{
             filename:'[name].js',
-            path:path.join(__dirname,'dist')
+            path:path.join(__dirname,'docs')
         },
         module:{
 
         },
         plugins:[
-            new HtmlWebpackPlugin(),
+            new HtmlWebpackPlugin({
+                title:"Soojin's portfolio"
+            }),
         ]
     }
 
