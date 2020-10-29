@@ -1,6 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const CopyPlugin = require('copy-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = (env,opts)=>{
 
@@ -33,9 +35,18 @@ module.exports = (env,opts)=>{
             ]
         },
         plugins:[
+            new CleanWebpackPlugin(),
             new VueLoaderPlugin(),
             new HtmlWebpackPlugin({
                 template: path.join(__dirname, 'index.html')
+            }),
+            new CopyPlugin({
+                patterns:[
+                    {
+                        from: 'assets/',
+                        to:'assets/'
+                    }
+                ]
             })
         ],
     }

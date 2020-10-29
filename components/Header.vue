@@ -19,6 +19,7 @@ export default {
 Header {
     display: flex;
 }
+
 div{
     flex: 1;
 }

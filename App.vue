@@ -1,7 +1,7 @@
 <template>
     <div id="wrap">
         <Header></Header>
-        hello world!!
+        <img src="assets/img/test-image.jpg" width="100%">
     </div>
 </template>
 
